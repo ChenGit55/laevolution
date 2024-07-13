@@ -1,8 +1,8 @@
 "use client";
-import styles from "./Header.module.css";
+import "./header.css";
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Logo1 from "../SvgComponents/Logo1";
 
 export default function Header() {
   const [expandNav, setExpandNav] = useState(false);
@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <header>
       {/* Conteúdo do Header */}
-      <nav className="border-gray-200 bg-black dark:bg-black dark:border-gray-700">
+      <nav className="my-nav border-gray-200 bg-black dark:bg-black dark:border-gray-700">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           {/* Menu */}
           <div
@@ -25,53 +25,36 @@ export default function Header() {
           >
             <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-black md:dark:bg-transparent dark:border-gray-700">
               <li>
-                <a href="/" className={styles.navLink}>
+                <a href="/" className="navLink">
                   Home
                 </a>
               </li>
               <li>
-                <Link href="/private-training" className={styles.navLink}>
+                <Link href="/private-training" className="navLink">
                   Private Training
                 </Link>
               </li>
               <li>
-                <Link href="/camps" className={styles.navLink}>
+                <Link href="/camps" className="navLink">
                   Camps
                 </Link>
               </li>
               <li>
-                <Link href="/schools" className={styles.navLink}>
+                <Link href="/schools" className="navLink">
                   Schools
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/about-us"
-                  className={styles.navLink}
-                  aria-current="page"
-                >
+                <Link href="/about-us" className="navLink" aria-current="page">
                   About Us
                 </Link>
               </li>
             </ul>
           </div>
-          <a href="#" className="flex items-center space-x-3">
-            {/* Logo */}
-            <Image
-              src={"img/logos/lase-logo.svg"}
-              alt={"Logo"}
-              width={50}
-              height={50}
-            ></Image>
-            <svg
-              className="logo2"
-              xmlSpace="preserve"
-              viewBox="0 0 217.9 162.3"
-            >
-              <use xlinkHref="/img/logos/logo-grafite.svg"></use>
-            </svg>
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
-          </a>
+          {/* Logo */}
+          <Link href="/" className="navLink">
+            <Logo1 className="nav-logo" />
+          </Link>
           {/* "hamburger" menu toggle */}
           <button
             data-collapse-toggle="navbar-solid-bg"

@@ -1,0 +1,26 @@
+.my-nav{
+    background-color: rgb(255, 255, 255,0);
+}
+
+.navLink{
+    color: white;
+    font-weight: 700;
+}
+
+.navLink:hover{
+    color: var(--secondary);
+}
+
+.nav-logo{    
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 150px;  
+}
+
+
+.nav-logo:hover{
+    color: var(--secondary);
+}
+

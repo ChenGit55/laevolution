@@ -1,6 +1,5 @@
 import EnrollForm from "@/components/EnrollForm";
 import "./camps.css";
-import Carousel from "@/components/Carousel";
 
 export default function Camps() {
   return (
