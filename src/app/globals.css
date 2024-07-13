@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #062957;
+  --secondary: #d49529;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body { 
+  color: white;
+  font-family: 'Montserrat',sans-serif; 
+  margin:0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.global-container{
+  padding: 5% 0%;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2em;
+  text-align: center;
+}
+
+.my-btn{    
+  color:black;
+  border-color: white;
+  background-color: white;
+}
+
+.my-btn:hover{    
+  color: white;
+  border-color: green;
+  background-color: green;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

@@ -1,0 +1,63 @@
+
+.enroll-form h5{
+    border-top: 1px solid var(--secondary);
+    width: 200px;
+    text-align: center;
+    align-self: center;
+    padding-top: 3px;
+    color: var(--secondary);
+}
+
+.enroll-form span{
+    color: white;
+    text-align: start;
+}
+.enroll-form .form-field{
+    margin-top: 10px;
+}
+
+.children-information, .parent-information,.emergency-contact{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+}
+
+.form-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.form-button button[disabled]{    
+    color:black;
+    border-color: white;
+    background-color: white;
+    opacity: 0.5;
+}
+
+/*  */
+  
+.collapse-content p{
+    padding: 15px;
+}
+
+  .collapse-content {
+    display: block;
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    overflow: scroll;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+  }
+  
+  .expanded {
+    max-height: 1000px; /* Valor suficientemente grande para mostrar todo o conteúdo */
+  }
+  
+  .collapsed {
+    max-height: 0;
+  }

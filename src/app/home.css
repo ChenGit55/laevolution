@@ -1,0 +1,58 @@
+.paralax-bg{    
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+.paralax00{
+    background-image: url('/img/photos/team.jpg');
+}
+
+.cover-page{
+    width: 100%;
+}
+
+.logo-container {   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.cover-logo{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 900px;    
+}
+
+
+.paralax01{
+    background-image: url('/img/photos/kids.jpg');
+}
+.paralax01 h1{
+    visibility: hidden;
+}
+
+.paralax02{
+    background-image: url('/img/photos/kids.jpg');
+}
+.carousel-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}

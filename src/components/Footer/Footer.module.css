@@ -1,0 +1,27 @@
+.footeContainer{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerSocialMedia{
+    display: flex;
+    list-style-type: none;
+    padding-left: 10px;
+    gap: 10px;
+}
+
+.footerIcon{
+    width: 30px;
+}
+
+.footerIcon :hover{
+    color: var(--secondary);
+}
