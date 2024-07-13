@@ -5,7 +5,7 @@ import Carousel from "@/components/Carousel";
 export default function Camps() {
   return (
     <main className="camps-page">
-      <h1>Chose your best field</h1>
+      <h1>Chose your field</h1>
       <section className="camps-select-section">
         <select
           name="camps_select"
