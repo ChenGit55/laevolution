@@ -38,7 +38,6 @@
     width: 900px;    
 }
 
-
 .paralax01{
     background-image: url('/img/photos/kids.jpg');
 }
@@ -49,6 +48,7 @@
 .paralax02{
     background-image: url('/img/photos/kids.jpg');
 }
+
 .carousel-section{
     display: flex;
     justify-content: center;

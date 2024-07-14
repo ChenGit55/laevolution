@@ -1,5 +1,6 @@
 import Carousel from "@/components/Carousel";
 import Logo1 from "@/components/SvgComponents/Logo1";
+import "./home.css";
 
 export default function Home() {
   return (

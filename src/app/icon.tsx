@@ -1,4 +1,4 @@
-import Logo1 from "@/components/SvgComponents/Logo1";
+import LionHead from "@/components/SvgComponents/LionHead";
 import { ImageResponse } from "next/og";
 
 // Route segment config
@@ -6,8 +6,8 @@ export const runtime = "edge";
 
 // Image metadata
 export const size = {
-  width: 32,
-  height: 32,
+  width: 25,
+  height: 25,
 };
 export const contentType = "image/png";
 
@@ -16,7 +16,19 @@ export default function Icon() {
   return new ImageResponse(
     (
       // ImageResponse JSX element
-      <Logo1 className="icon-logo" width="64px" />
+      <div
+        style={{
+          fontSize: 24,
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "white",
+        }}
+      >
+        <LionHead className="icon-logo" width="32px" />
+      </div>
     ),
     // ImageResponse options
     {
