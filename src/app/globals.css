@@ -7,14 +7,6 @@
   --secondary: #d49529;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body { 
   color: white;
   font-family: 'Montserrat',sans-serif; 
@@ -53,8 +45,4 @@ h2 {
   background-color: green;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+

@@ -65,24 +65,27 @@ function Carousel() {
             <Image
               src={"/img/photos/photo0001.png"}
               alt={"slide1"}
-              width={900}
-              height={900}
+              className="w-50 h-auto"
+              width="900"
+              height="900"
             />
           </div>
           <div className="carousel-item">
             <Image
               src={"/img/photos/photo0002.png"}
               alt={"slide2"}
-              width={900}
-              height={900}
+              className="w-50 h-auto"
+              width="900"
+              height="900"
             />
           </div>
           <div className="carousel-item">
             <Image
               src={"/img/photos/photo0003.png"}
               alt={"slide3"}
-              width={900}
-              height={900}
+              className="w-50 h-auto"
+              width="900"
+              height="900"
             />
           </div>
         </Slider>

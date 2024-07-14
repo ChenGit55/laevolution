@@ -1,33 +1,31 @@
-body {
-    margin: 0;
-    padding: 0;
-  }
-
+.carousel-component{
+    padding: 5% 0;
+}
 
 .carousel-item{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
-    max-width: 100%;
-    max-height: 100%;
 }
 
+
 @media (max-width: 480px){
-    .carousel-component{
-        width: 300px;    
+    .carousel-component {
+        max-width: 300px;
+        height: auto;
     }
 }
 
-@media (min-width: 481) and (max-width: 991px){
-    .carousel-component{
-        width: 500px;    
+@media (min-width: 481px) and (max-width: 991px){
+    .carousel-component {
+       max-width: 500px;
     }
 }
 
 @media (min-width: 992px){
-    .carousel-component{
-        width: 900px;    
+    .carousel-component {
+       max-width: 900px;   
+        height: auto; 
     }
 }
 
