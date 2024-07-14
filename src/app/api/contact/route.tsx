@@ -13,14 +13,18 @@ export async function POST(request: Request) {
     </div>
   </div>`;
 
-  const newMailOption = {
-    from: "ContactUs sevice", // sender address
-    to: process.env.RECEIPT_EMAIL, // receiver (use array of string for a list)
-    subject: subject, // Subject line
-    html: htmlEmail, // plain text bod
-  };
+  try {
+    const newMailOption = {
+      from: "ContactUs sevice", // sender address
+      to: process.env.RECEIPT_EMAIL, // receiver (use array of string for a list)
+      subject: subject, // Subject line
+      html: htmlEmail, // plain text bod
+    };
 
-  await transporter.sendMail(newMailOption);
-
-  return Response.json({ email, subject, message });
+    await transporter.sendMail(newMailOption);
+    console.log("Email successfully sent");
+    return Response.json({ email, subject, message });
+  } catch (error) {
+    console.log("Email error", error);
+  }
 }

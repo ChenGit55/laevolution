@@ -39,15 +39,20 @@ export async function POST(request: Request) {
     </div>
   </div>`;
 
-    const newMailOption = {
-      from: "Enroll sevice", // sender address
-      to: process.env.RECEIPT_EMAIL, // receiver (use array of string for a list)
-      subject: "Enroll", // Subject line
-      text: htmlEmail,
-      html: htmlEmail,
-    };
+    try {
+      const newMailOption = {
+        from: "Enroll sevice", // sender address
+        to: process.env.RECEIPT_EMAIL, // receiver (use array of string for a list)
+        subject: "Enroll", // Subject line
+        text: htmlEmail,
+        html: htmlEmail,
+      };
 
-    await transporter.sendMail(newMailOption);
+      await transporter.sendMail(newMailOption);
+      console.log("Email successfully sent.");
+    } catch (error) {
+      console.log("Send email error -", error);
+    }
 
     return Response.json(formData);
   } catch (err) {
