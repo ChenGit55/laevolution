@@ -7,6 +7,11 @@
   --secondary: #d49529;
 }
 
+.icon-logo{
+  color: white;
+  background-color: #fff;
+}
+
 body { 
   color: white;
   font-family: 'Montserrat',sans-serif; 
@@ -14,10 +19,6 @@ body {
   padding: 0;
   overflow-x: hidden;
   background-color: black;
-}
-
-.global-container{
-  /* padding-top: 20px; */
 }
 
 

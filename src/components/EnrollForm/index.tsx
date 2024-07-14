@@ -4,6 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 
 export default function EnrollForm() {
+  const [isChecked, setIsChecked] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     gender: "",
@@ -51,8 +52,7 @@ export default function EnrollForm() {
           console.log(response);
         });
 
-      console.log("Success:", response);
-      console.log(formData);
+      // reset fileds
       setFormData({
         name: "",
         gender: "",
@@ -70,6 +70,7 @@ export default function EnrollForm() {
         emergency_email: "",
         emergency_phone: "",
       });
+      setIsChecked(!isChecked);
     } catch (error) {
       console.error("Fail to send email :", error);
     }
@@ -83,8 +84,7 @@ export default function EnrollForm() {
     setCollapsed(!collapsed);
   };
 
-  // checkbox
-  const [isChecked, setIsChecked] = useState(false);
+  // required checkbox
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
@@ -106,6 +106,7 @@ export default function EnrollForm() {
               onChange={handleChange}
               className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
               placeholder="Full Name"
+              required
             />
           </label>
         </div>
@@ -125,6 +126,7 @@ export default function EnrollForm() {
                 checked={formData.gender === "boy"}
                 onChange={handleChange}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                required
               />
               <label
                 htmlFor="inline-radio"
@@ -142,6 +144,7 @@ export default function EnrollForm() {
                 onChange={handleChange}
                 checked={formData.gender === "girl"}
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                required
               />
               <label
                 htmlFor="inline-2-radio"

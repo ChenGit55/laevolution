@@ -43,7 +43,7 @@ export async function POST(request: Request) {
       const newMailOption = {
         from: "Enroll sevice", // sender address
         to: process.env.RECEIPT_EMAIL, // receiver (use array of string for a list)
-        subject: "Enroll", // Subject line
+        subject: `${name} - ${email}`, // Subject line
         text: htmlEmail,
         html: htmlEmail,
       };

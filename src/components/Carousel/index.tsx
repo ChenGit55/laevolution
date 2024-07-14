@@ -65,7 +65,6 @@ function Carousel() {
             <Image
               src={"/img/photos/photo0001.png"}
               alt={"slide1"}
-              className="w-50 h-auto"
               width="900"
               height="900"
             />
@@ -74,7 +73,6 @@ function Carousel() {
             <Image
               src={"/img/photos/photo0002.png"}
               alt={"slide2"}
-              className="w-50 h-auto"
               width="900"
               height="900"
             />
@@ -83,7 +81,6 @@ function Carousel() {
             <Image
               src={"/img/photos/photo0003.png"}
               alt={"slide3"}
-              className="w-50 h-auto"
               width="900"
               height="900"
             />
