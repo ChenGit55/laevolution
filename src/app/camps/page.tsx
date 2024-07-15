@@ -14,7 +14,7 @@ export default function Camps() {
         <div className="base-card soccer-card">
           <div className="card-img-container">
             <Image
-              src={"/img/photos/girl-thinking.jpg"}
+              src={"/img/photos/two-boys-playing.jpg"}
               className="card-img "
               width={500}
               height={0}
@@ -29,7 +29,7 @@ export default function Camps() {
         <div className="base-card beach-card">
           <div className="card-img-container">
             <Image
-              src={"/img/photos/kids-playing.jpg"}
+              src={"/img/photos/boy-beach-obstacles.jpg"}
               className="card-img "
               width={500}
               height={0}
@@ -44,7 +44,7 @@ export default function Camps() {
         <div className="base-card futsal-card">
           <div className="card-img-container">
             <Image
-              src={"/img/photos/two-boys-playing.jpg"}
+              src={"/img/photos/futsal-girl.jpg"}
               className="card-img "
               width={500}
               height={0}
