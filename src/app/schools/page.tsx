@@ -16,7 +16,6 @@ export default function Schools() {
         former player. To bring LA Soccer Evolution to your school please
         contact us at info@lasevolution.com.
       </p>
-      <EnrollForm />
     </section>
   );
 }
