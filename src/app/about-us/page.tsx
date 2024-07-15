@@ -23,7 +23,7 @@ export default function AboutUs() {
             individual player development. Soccer, futsal, street soccer, and
             beach soccer are our“tools” to make the magic happen!
           </p>
-          <p className="w-75">
+          <p>
             Combined with individual development, each athlete learns how to
             best offer his capabilities and skills to become a better teammate,
             no matter in what stage of physical and cognitive development they
@@ -34,14 +34,14 @@ export default function AboutUs() {
           </p>
 
           <h2>OUR MISSION</h2>
-          <p className="w-75">
+          <p>
             Create a positive environment, always play fair, respect the game
             and show sportmanship, maintain the Team Spirit, provide athlete
             opportunities for interpersonal relationships and explore the
             creativity in the sport.
           </p>
           <h2>OUR WORK</h2>
-          <p className="w-75">
+          <p>
             Futebol with boldness and joy to allow each player to discover their
             game and have fun with the guidance of certified coaches. Our main
             goal is to work and develop the potential of each child and youth
