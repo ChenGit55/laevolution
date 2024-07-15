@@ -6,6 +6,8 @@ import axios from "axios";
 export default function EnrollForm() {
   const [isChecked, setIsChecked] = useState(false);
   const [formData, setFormData] = useState({
+    program: "",
+
     name: "",
     gender: "",
     dob: "",
@@ -54,6 +56,7 @@ export default function EnrollForm() {
 
       // reset fileds
       setFormData({
+        program: "",
         name: "",
         gender: "",
         dob: "",
@@ -92,6 +95,25 @@ export default function EnrollForm() {
 
   return (
     <form className="enroll-form max-w-md mx-auto p-5" onSubmit={sendEmail}>
+      <div className="program-select">
+        <div className="form-field">
+          <select
+            className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+            name="program"
+            id="program"
+            value={formData.program}
+            onChange={handleChange}
+          >
+            <option value="--">--</option>
+            <option value="Soccer">Soccer</option>
+            <option value="Beach Soccer">Beach Soccer</option>
+            <option value="Futsal">Futsal</option>
+            <option value="Private Training">Private Training</option>
+            <option value="Evolution Expirience">Evolution Expirience</option>
+          </select>
+        </div>
+      </div>
+
       <div className="children-information">
         <h5>Child information</h5>
         <div className="form-field">
@@ -99,16 +121,16 @@ export default function EnrollForm() {
             <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
               Name
             </span>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
-              placeholder="Full Name"
-              required
-            />
           </label>
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+            placeholder="Full Name"
+            required
+          />
         </div>
         <div className="form-field">
           <label className="block">

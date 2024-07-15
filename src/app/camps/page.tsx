@@ -1,6 +1,8 @@
+"use client";
 import EnrollForm from "@/components/EnrollForm";
 import "./camps.css";
 import Image from "next/image";
+import Card from "@/components/Card";
 
 export default function Camps() {
   return (
@@ -11,7 +13,7 @@ export default function Camps() {
       </section>
       <div className="cards-container">
         {/* soccer card */}
-        <div className="base-card soccer-card">
+        <div id="soccer-card" className="base-card soccer-card">
           <div className="card-img-container">
             <Image
               src={"/img/photos/two-boys-playing.jpg"}
@@ -26,7 +28,7 @@ export default function Camps() {
           </div>
         </div>
         {/* beach soccer card */}
-        <div className="base-card beach-card">
+        <a id="beach-card" className="base-card beach-card">
           <div className="card-img-container">
             <Image
               src={"/img/photos/boy-beach-obstacles.jpg"}
@@ -39,9 +41,9 @@ export default function Camps() {
           <div className="card-description">
             <h5>Beach Soccer</h5>
           </div>
-        </div>
+        </a>
         {/* futsal card */}
-        <div className="base-card futsal-card">
+        <a id="futsal-card" className="base-card futsal-card">
           <div className="card-img-container">
             <Image
               src={"/img/photos/futsal-girl.jpg"}
@@ -54,7 +56,7 @@ export default function Camps() {
           <div className="card-description">
             <h5>Futsal</h5>
           </div>
-        </div>
+        </a>
         {/*  */}
       </div>
       <div>

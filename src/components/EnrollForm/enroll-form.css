@@ -16,7 +16,7 @@
     margin-top: 10px;
 }
 
-.children-information, .parent-information,.emergency-contact{
+.children-information, .parent-information,.emergency-contact, .program-select{
     margin-top: 15px;
     display: flex;
     flex-direction: column;

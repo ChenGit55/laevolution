@@ -3,6 +3,7 @@ import { transporter } from "@/services/mail.service";
 export async function POST(request: Request) {
   try {
     const formData = await request.formData();
+    const program = formData.get("program");
     const name = formData.get("name");
     const gender = formData.get("gender");
     const dob = formData.get("dob");
@@ -19,23 +20,23 @@ export async function POST(request: Request) {
     const emergency_phone = formData.get("emergency_phone");
 
     const htmlEmail = `<div>
-    <h1>ENROLL INFO</h1>
+    <h1>${name} INFO</h1>
     <div>
-    <p> Enroll </p>
-    <p>Child ${name}</p>
-    <p>Gender ${gender}</p>
-    <p>Birth ${dob}</p>
-    <p>Addtional information ${add_inf}</p>
-    <p>Parent Name ${p_name}</p>
-    <p>Address ${address}</p>
-    <p>City ${city}</p>
-    <p>State ${state}</p>
-    <p>Zip ${zip}</p>
-    <p>Email ${email}</p>
-    <p>Phone ${phone}</p>
-    <p>Emergency Contact Name ${emergency_name}</p>
-    <p>Emergency Contact Email ${emergency_email}</p>
-    <p>Emergency Contact Phone ${emergency_phone}</p>
+    <p>Program - ${program}</p>
+    <p>Name - ${name}</p>
+    <p>Gender - ${gender}</p>
+    <p>Birth - ${dob}</p>
+    <p>Addtional information - ${add_inf}</p>
+    <p>Parent Name - ${p_name}</p>
+    <p>Address - ${address}</p>
+    <p>City - ${city}</p>
+    <p>State - ${state}</p>
+    <p>Zip - ${zip}</p>
+    <p>Email - ${email}</p>
+    <p>Phone - ${phone}</p>
+    <p>Emergency Contact Name - ${emergency_name}</p>
+    <p>Emergency Contact Email - ${emergency_email}</p>
+    <p>Emergency Contact Phone - ${emergency_phone}</p>
     </div>
   </div>`;
 
