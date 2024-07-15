@@ -59,7 +59,7 @@ function Carousel() {
         />
       </Head>
       <div className="carousel-component">
-        <h2>Come train with us</h2>
+        <h2>Come train with us!</h2>
         <Slider {...settings}>
           <div className="carousel-item">
             <Image
