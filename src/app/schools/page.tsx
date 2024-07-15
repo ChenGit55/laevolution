@@ -1,12 +1,9 @@
-import EnrollForm from "@/components/EnrollForm";
-import "./schools.css";
-
 export default function Schools() {
   return (
     <main>
       <h1>Bring LA Evolution to your School</h1>
       <section className="scholl-section1">
-        <article>
+        <article className="article-base">
           <p>
             LA Evolution soccer and fitness program emphasizes correct soccer
             fundamentals and techniques in fun way. Our goal is to create a

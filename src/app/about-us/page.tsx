@@ -1,12 +1,10 @@
-import "./about-us.css";
-
 export default function AboutUs() {
   return (
     <main className="">
       <h1>About US</h1>
-      <section className="about-section1">
+      <section>
         {/* <img className="logo-head mx-auto fade-in" src="#" alt="lion" /> */}
-        <article>
+        <article className="article-base">
           <p>
             LA Soccer Evolution is a youth soccer program in West Los Angeles.
             Using techniques and methodology acquired after years of experience

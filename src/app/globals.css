@@ -33,6 +33,15 @@ h2 {
   text-align: center;
 }
 
+.article-base{
+  margin: 20px 10%;
+}
+
+.article-base p{
+  text-align: justify;
+
+}
+
 .my-btn{    
   color:black;
   border-color: white;
