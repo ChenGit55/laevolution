@@ -11,57 +11,48 @@ export default function Camps() {
       </section>
       <div className="cards-container">
         {/* soccer card */}
-        <div className="base-card">
+        <div className="base-card soccer-card">
           <div className="card-img-container">
             <Image
-              src={"/img/photos/young-goalkepper.jpg"}
-              className="card-img"
-              width={900}
-              height={900}
+              src={"/img/photos/girl-thinking.jpg"}
+              className="card-img "
+              width={500}
+              height={0}
               alt={"soccer"}
-              objectFit="cover"
             />
           </div>
-          <div className="card-content">
-            <div className="card-description">
-              <h2>Soccer</h2>
-            </div>
+          <div className="card-description">
+            <h5>Soccer</h5>
           </div>
         </div>
         {/* beach soccer card */}
-        <div className="base-card">
+        <div className="base-card beach-card">
           <div className="card-img-container">
             <Image
-              src={"/img/photos/two-boys-playing.jpg"}
-              className="card-img"
-              width={900}
-              height={900}
-              alt={"soccer"}
-              objectFit="cover"
+              src={"/img/photos/kids-playing.jpg"}
+              className="card-img "
+              width={500}
+              height={0}
+              alt={"beach-soccer"}
             />
           </div>
-          <div className="card-content">
-            <div className="card-description">
-              <h2>Beach Soccer</h2>
-            </div>
+          <div className="card-description">
+            <h5>Beach Soccer</h5>
           </div>
         </div>
         {/* futsal card */}
-        <div className="base-card">
+        <div className="base-card futsal-card">
           <div className="card-img-container">
             <Image
-              src={"/img/photos/tackle.jpg"}
-              className="card-img"
-              width={900}
-              height={900}
-              alt={"soccer"}
-              objectFit="cover"
+              src={"/img/photos/two-boys-playing.jpg"}
+              className="card-img "
+              width={500}
+              height={0}
+              alt={"futsal"}
             />
           </div>
-          <div className="card-content">
-            <div className="card-description">
-              <h2>Futsal</h2>
-            </div>
+          <div className="card-description">
+            <h5>Futsal</h5>
           </div>
         </div>
         {/*  */}
