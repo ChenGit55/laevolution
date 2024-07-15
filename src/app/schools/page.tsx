@@ -1,8 +1,17 @@
+import Image from "next/image";
 export default function Schools() {
   return (
     <main>
       <h1>Bring LA Evolution to your School</h1>
       <section className="scholl-section1">
+        <div className="top-page-image">
+          <Image
+            src={"/img/photos/kids-school.jpg"}
+            height={500}
+            width={500}
+            alt="private-class"
+          />
+        </div>
         <article className="article-base">
           <p>
             LA Evolution soccer and fitness program emphasizes correct soccer

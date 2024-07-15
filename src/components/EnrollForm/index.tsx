@@ -2,8 +2,10 @@
 import "./enroll-form.css";
 import { useState } from "react";
 import axios from "axios";
+import Modal from "../Modal";
 
 export default function EnrollForm() {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const [formData, setFormData] = useState({
     program: "",
@@ -25,6 +27,16 @@ export default function EnrollForm() {
     emergency_email: "",
     emergency_phone: "",
   });
+
+  // open/close sucess msg with modal
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
 
   // fill the datas
   const handleChange = (e: { target: { name: any; value: any } }) => {
@@ -74,6 +86,7 @@ export default function EnrollForm() {
         emergency_phone: "",
       });
       setIsChecked(!isChecked);
+      openModal();
     } catch (error) {
       console.error("Fail to send email :", error);
     }
@@ -532,6 +545,12 @@ export default function EnrollForm() {
           Enroll
         </button>
       </div>
+      {/* Modal */}
+      <Modal
+        isOpen={modalIsOpen}
+        onClose={closeModal}
+        message="Welcome to the Evolution team, we will contact you soon."
+      />
     </form>
   );
 }

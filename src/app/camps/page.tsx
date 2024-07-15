@@ -59,6 +59,18 @@ export default function Camps() {
         </a>
         {/*  */}
       </div>
+      <article className="article-base">
+        <h2>Are you ready to take your game to the next level?</h2>
+        <p>
+          {" "}
+          Futebol with Boldness and Joy to allow each player to discover their
+          game and have fun with the guidance of certified coaches. Our main
+          objective is to work and develop the potential of each child and youth
+          for MODERN SOCCER and for life; highlighting discipline, respect for
+          all, self-confidence, teamwork, responsibility and commitment.
+        </p>
+        <p> LA Evolution Soccer Camps are open to boys and girls, ages 5-15.</p>
+      </article>
       <div>
         <EnrollForm />
       </div>

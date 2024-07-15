@@ -33,6 +33,12 @@ h2 {
   text-align: center;
 }
 
+.top-page-image{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .article-base{
   margin: 20px 10%;
 }
