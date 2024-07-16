@@ -3,8 +3,6 @@ import "./enroll-form.css";
 import { useState } from "react";
 import axios from "axios";
 import Modal from "../Modal";
-import ExampleComponent from "../PayPalIntegration";
-import PayPal from "../PayPalIntegration";
 
 export default function EnrollForm() {
   const [collapsed, setCollapsed] = useState(true);
