@@ -544,9 +544,7 @@ export default function EnrollForm() {
         </button>
       </div>
 
-      <div className="form-field">
-        <PayPal amount="5.00" />
-      </div>
+      <div className="form-field"></div>
 
       {/* Modal */}
       <Modal
