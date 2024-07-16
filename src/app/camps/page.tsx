@@ -2,7 +2,6 @@
 import EnrollForm from "@/components/EnrollForm";
 import "./camps.css";
 import Image from "next/image";
-import Card from "@/components/Card";
 
 export default function Camps() {
   return (

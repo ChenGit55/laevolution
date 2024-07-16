@@ -3,8 +3,11 @@ import "./enroll-form.css";
 import { useState } from "react";
 import axios from "axios";
 import Modal from "../Modal";
+import ExampleComponent from "../PayPalIntegration";
+import PayPal from "../PayPalIntegration";
 
 export default function EnrollForm() {
+  const [collapsed, setCollapsed] = useState(true);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const [formData, setFormData] = useState({
@@ -29,7 +32,6 @@ export default function EnrollForm() {
   });
 
   // open/close sucess msg with modal
-
   const openModal = () => {
     setModalIsOpen(true);
   };
@@ -47,6 +49,7 @@ export default function EnrollForm() {
     }));
   };
 
+  //send informations to the email
   const sendEmail = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
 
@@ -93,15 +96,12 @@ export default function EnrollForm() {
   };
 
   // colapse link
-  const [collapsed, setCollapsed] = useState(true);
-
   const toggleCollapse = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setCollapsed(!collapsed);
   };
 
   // required checkbox
-
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
@@ -545,6 +545,11 @@ export default function EnrollForm() {
           Enroll
         </button>
       </div>
+
+      <div className="form-field">
+        <PayPal amount="5.00" />
+      </div>
+
       {/* Modal */}
       <Modal
         isOpen={modalIsOpen}
