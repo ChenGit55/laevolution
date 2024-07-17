@@ -1,48 +1,52 @@
 "use client";
 import Image from "next/image";
 import "./private-training.css";
-import { useState } from "react";
-import EnrollForm from "@/components/EnrollForm";
 
 export default function PrivateTraining() {
   return (
     <main className="">
       <h1>Private Classes</h1>
-      <div className="top-page-image">
-        <Image
-          src={"/img/photos/young-goalkepper.jpg"}
-          height={500}
-          width={500}
-          alt="private-class"
-        />
-      </div>
       <article className="article-base">
-        Our private classes are for all ages, including adults. Private coaching
-        will improve the player’s technical skills and decision-making on the
-        field. Our coaches will help boost the player’s confidence when they
-        have the ball at their feet, improving weaknesses, sharpening strengths,
-        helping them to become complete players, motivated throughout the whole
-        process of becoming a soccer player.
+        <h2 className="header-text">
+          Our private classes are for all ages, including adults. Private
+          coaching will improve the player’s technical skills and
+          decision-making on the field. Our coaches will help boost the player’s
+          confidence when they have the ball at their feet, improving
+          weaknesses, sharpening strengths, helping them to become complete
+          players, motivated throughout the whole process of becoming a soccer
+          player.
+        </h2>
       </article>
-      <div className="chose-us-div">
-        <article className="article-base">
-          <p>
-            <b>Why choose us?</b>
-          </p>
-          <ol>
-            <li>
-              We have one of the most successful methodologies in Brazil, used
-              by major references in international sport.
-            </li>
-            <li>Focus on technical and tactical development.</li>
-            <li>Great post-workout support.</li>
-            <li>
-              International reference, including partnerships with major clubs
-              such as PSG and Flamengo.
-            </li>
-          </ol>
-        </article>
+      <div className="feature-section">
+        <div className="feature-img">
+          <Image
+            src={"/img/photos/young-goalkepper.jpg"}
+            height={500}
+            width={500}
+            alt="private-class"
+          />
+        </div>
+        <div className="feature-text">
+          <article>
+            <p>
+              <b>Why choose us?</b>
+            </p>
+            <ol>
+              <li>
+                We have one of the most successful methodologies in Brazil, used
+                by major references in international sport.
+              </li>
+              <li>Focus on technical and tactical development.</li>
+              <li>Great post-workout support.</li>
+              <li>
+                International reference, including partnerships with major clubs
+                such as PSG and Flamengo.
+              </li>
+            </ol>
+          </article>
+        </div>
       </div>
+
       <h2>Testimonial</h2>
       <div className="inline-flex items-center justify-center w-full">
         <hr className="w-64 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700" />
@@ -75,8 +79,8 @@ export default function PrivateTraining() {
               <i>- Christina S., mother of a player.</i>{" "}
             </div>
           </div>
-          <div className="testimony-text">
-            <p className="mb-3 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:me-3 first-letter:float-start">
+          <div className="testimony-text article-base">
+            <p className="mb-3 first-letter:text-7xl first-letter:font-bold first-letter:me-3 first-letter:float-start">
               We are extremely pleased with the individual football training
               service for our son. From the beginning, we were impressed by the
               coach's professionalism and dedication to personalizing each
@@ -118,7 +122,7 @@ export default function PrivateTraining() {
         develop valuable life skills.”
       </p>
 
-      <h2>
+      {/* <h2>
         Schedule your training today and start reaching your football potential!
         <p>Sessions $ 120.00 per hour.</p>
       </h2>
@@ -126,10 +130,7 @@ export default function PrivateTraining() {
         <button className="cta-btn-s" data-text="Click here to begin!">
           Click here to begin!
         </button>
-      </div>
-      <div className="payment-pop-up">
-        <div className="payment-pop-up-content"></div>
-      </div>
+      </div> */}
     </main>
   );
 }
