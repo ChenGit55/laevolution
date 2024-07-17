@@ -59,3 +59,9 @@ h2 {
   border-color: green;
   background-color: green;
 }
+
+.chose-us-div{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
