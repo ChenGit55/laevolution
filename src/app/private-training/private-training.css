@@ -14,6 +14,10 @@
     padding: 30px;
 }
 
+.testimony-sub-and-img{
+    margin-bottom: 5px;
+}
+
 .testimony-img{
     width: 200px;
     height: 200px;
@@ -24,4 +28,13 @@
 .testimony-text{
     width: 400px;
     height: auto;
+}
+
+@media (max-width: 480px){
+    .testimony-card{
+        flex-direction: column;
+        align-items: center;
+        height: 800px;
+    }
+
 }

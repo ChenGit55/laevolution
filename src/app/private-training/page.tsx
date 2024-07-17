@@ -45,12 +45,13 @@ export default function PrivateTraining() {
         <hr className="w-64 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700" />
         <div className="absolute px-4 -translate-x-1/2 bg-white left-1/2 dark:bg-gray-900">
           <svg
-            className="w-4 h-4 text-gray-700 dark:text-gray-300"
+            className="w-4 h-4"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             viewBox="0 0 18 14"
           >
+            {" "}
             <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
           </svg>
         </div>
@@ -58,7 +59,7 @@ export default function PrivateTraining() {
 
       <div className="testimonial-section">
         <div className="testimony-card">
-          <div>
+          <div className="testimony-sub-and-img">
             <div className="testimony-img">
               <Image
                 height={300}
@@ -67,7 +68,9 @@ export default function PrivateTraining() {
                 src={"/img/photos/mom-son.jpg"}
               />
             </div>
-            <div>- Christina S., mother of a player.</div>
+            <div>
+              <i>- Christina S., mother of a player.</i>{" "}
+            </div>
           </div>
           <div className="testimony-text">
             <p className="mb-3 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:me-3 first-letter:float-start">
