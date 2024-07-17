@@ -1,5 +1,8 @@
+"use client";
 import Image from "next/image";
 import "./private-training.css";
+import { useState } from "react";
+import EnrollForm from "@/components/EnrollForm";
 
 export default function PrivateTraining() {
   return (
@@ -123,6 +126,9 @@ export default function PrivateTraining() {
         <button className="cta-btn-s" data-text="Click here to begin!">
           Click here to begin!
         </button>
+      </div>
+      <div className="payment-pop-up">
+        <div className="payment-pop-up-content"></div>
       </div>
     </main>
   );

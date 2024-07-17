@@ -4,7 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 import Modal from "../Modal";
 
-export default function EnrollForm() {
+const EnrollForm = () => {
   const [collapsed, setCollapsed] = useState(true);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
@@ -28,17 +28,14 @@ export default function EnrollForm() {
     emergency_email: "",
     emergency_phone: "",
   });
-
   // open/close sucess msg with modal
   const openModal = () => {
     setModalIsOpen(true);
   };
-
   const closeModal = () => {
     setModalIsOpen(false);
   };
-
-  // fill the datas
+  // input datas
   const handleChange = (e: { target: { name: any; value: any } }) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
@@ -47,7 +44,7 @@ export default function EnrollForm() {
     }));
   };
 
-  //send informations to the email
+  // send informations to the email
   const sendEmail = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
 
@@ -87,23 +84,21 @@ export default function EnrollForm() {
         emergency_phone: "",
       });
       setIsChecked(!isChecked);
+
       openModal();
     } catch (error) {
       console.error("Fail to send email :", error);
     }
   };
-
   // colapse link
   const toggleCollapse = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setCollapsed(!collapsed);
   };
-
   // required checkbox
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
-
   return (
     <form className="enroll-form max-w-md mx-auto p-5" onSubmit={sendEmail}>
       <div className="program-select">
@@ -124,7 +119,6 @@ export default function EnrollForm() {
           </select>
         </div>
       </div>
-
       <div className="children-information">
         <h5>Child information</h5>
         <div className="form-field">
@@ -533,7 +527,6 @@ export default function EnrollForm() {
           </a>{" "}
         </label>
       </div>
-
       <div className="form-button">
         <button
           type="submit"
@@ -543,10 +536,6 @@ export default function EnrollForm() {
           Enroll
         </button>
       </div>
-
-      <div className="form-field"></div>
-
-      {/* Modal */}
       <Modal
         isOpen={modalIsOpen}
         onClose={closeModal}
@@ -554,4 +543,6 @@ export default function EnrollForm() {
       />
     </form>
   );
-}
+};
+
+export default EnrollForm;
