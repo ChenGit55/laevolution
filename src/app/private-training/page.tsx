@@ -114,6 +114,16 @@ export default function PrivateTraining() {
         who want to see their children not only improve at sport, but also
         develop valuable life skills.”
       </p>
+
+      <h2>
+        Schedule your training today and start reaching your football potential!
+        <p>Sessions $ 120.00 per hour.</p>
+      </h2>
+      <div className="cta-btn-box">
+        <button className="cta-btn-s" data-text="Click here to begin!">
+          Click here to begin!
+        </button>
+      </div>
     </main>
   );
 }
