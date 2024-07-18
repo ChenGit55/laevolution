@@ -1,0 +1,70 @@
+.plan-card{
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    width: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    transition-duration: 0.5s;
+    /* outline: 0.5px solid rgb(255, 211, 122); */
+    border-radius: 10px;
+}
+.plan-card:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 2px var(--secondary);
+}
+
+.plan-card:active{
+    box-shadow: 0px 0px 0px 0px rgb(54, 54, 54);
+    transition-duration: 0.1s;
+}
+
+.plan-card-title{
+    width: 100%;
+    color: var(--secondary);
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: flex;
+}
+
+.plan-card-price{
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    z-index: 1;
+}
+
+.plan-card-dollar-sign{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.plan-card-price-digits{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.price-special-characteres{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.plan-card-list{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 20px;
+    line-height: 40px;
+    width: 100%;
+    list-style: disc;
+}
+
+.plan-card-list-item::marker{
+    font-size: 1.2rem;
+    color: var(--secondary);
+}
