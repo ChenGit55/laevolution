@@ -27,35 +27,8 @@ export default function Camps() {
           </div>
         </div>
         {/* beach soccer card */}
-        <a id="beach-card" className="base-card beach-card">
-          <div className="card-img-container">
-            <Image
-              src={"/img/photos/boy-beach-obstacles.jpg"}
-              className="card-img "
-              width={500}
-              height={0}
-              alt={"beach-soccer"}
-            />
-          </div>
-          <div className="card-description">
-            <h5>Beach Soccer</h5>
-          </div>
-        </a>
+
         {/* futsal card */}
-        <a id="futsal-card" className="base-card futsal-card">
-          <div className="card-img-container">
-            <Image
-              src={"/img/photos/futsal-girl.jpg"}
-              className="card-img "
-              width={500}
-              height={0}
-              alt={"futsal"}
-            />
-          </div>
-          <div className="card-description">
-            <h5>Futsal</h5>
-          </div>
-        </a>
         {/*  */}
       </div>
       <article className="article-base">

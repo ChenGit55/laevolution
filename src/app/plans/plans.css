@@ -6,3 +6,12 @@
     padding: 30px;
     background-color: white;
 }
+
+.paypal-container{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    background-color: white;
+}
