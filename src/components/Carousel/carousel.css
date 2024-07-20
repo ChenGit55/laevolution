@@ -1,33 +1,19 @@
-.carousel-component{
-    padding: 5% 0;
+@media (max-width: 480px) {
+  .carousel-component {
+    max-width: 300px;
+    height: auto;
+  }
 }
 
-.carousel-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (min-width: 481px) and (max-width: 991px) {
+  .carousel-component {
+    max-width: 500px;
+  }
 }
 
-
-@media (max-width: 480px){
-    .carousel-component {
-        max-width: 300px;
-        height: auto;
-    }
+@media (min-width: 992px) {
+  .carousel-component {
+    max-width: 1200px;
+    height: auto;
+  }
 }
-
-@media (min-width: 481px) and (max-width: 991px){
-    .carousel-component {
-       max-width: 500px;
-    }
-}
-
-@media (min-width: 992px){
-    .carousel-component {
-       max-width: 900px;   
-        height: auto; 
-    }
-}
-
-
-

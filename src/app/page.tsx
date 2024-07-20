@@ -17,6 +17,7 @@ export default function Home() {
 
       {/* carosel section */}
       <div className="carousel-section">
+        <h2>Traing with LA Evolution!</h2>
         <Carousel />
       </div>
 

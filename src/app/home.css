@@ -1,57 +1,73 @@
-.paralax-bg{    
-    height: 100vh;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.paralax-bg {
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.separator{
-    background-color: black;
-    width: 100%;
-    height: 50px;
+.separator {
+  background-color: black;
+  width: 100%;
+  height: 50px;
 }
 
-.paralax00{
-    background-image: url('/img/photos/coach-teaching.JPG');
+.paralax00 {
+  background-image: url("/img/photos/coach-teaching.JPG");
 }
 
-.cover-page{
-    width: 100%;
+.cover-page {
+  width: 100%;
 }
 
-.logo-container {   
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.cover-logo{
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    width: 900px;    
+.cover-logo {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
 }
 
-.paralax01{
-    background-image: url('/img/photos/kids.jpg');
+.paralax01 {
+  background-image: url("/img/photos/kids.jpg");
 }
-.paralax01 h1{
-    visibility: hidden;
-}
-
-.paralax02{
-    background-image: url('/img/photos/kids.jpg');
+.paralax01 h1 {
+  visibility: hidden;
 }
 
-.carousel-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10px;
+.paralax02 {
+  background-image: url("/img/photos/kids.jpg");
+}
+
+.carousel-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  gap: 30px;
+}
+
+.carousel-section::before {
+  background-image: url("/img/photos/team.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

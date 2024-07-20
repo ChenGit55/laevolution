@@ -7,19 +7,18 @@
   --secondary: #d49529;
 }
 
-body { 
+body {
   color: white;
-  font-family: 'Montserrat',sans-serif; 
-  margin:0;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
   padding: 0;
   overflow-x: hidden;
   background-color: black;
 }
-.icon-logo{
+.icon-logo {
   color: white;
   width: 128px;
 }
-
 
 h1 {
   font-weight: 900;
@@ -33,27 +32,27 @@ h2 {
   text-align: center;
 }
 
-.top-page-image{
+.top-page-image {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.article-base{
+.article-base {
   margin: 20px 10%;
 }
 
-.article-base p{
+.article-base p {
   text-align: justify;
 }
 
-.my-btn{    
-  color:black;
+.my-btn {
+  color: black;
   border-color: white;
   background-color: white;
 }
 
-.my-btn:hover{    
+.my-btn:hover {
   color: white;
   border-color: green;
   background-color: green;
