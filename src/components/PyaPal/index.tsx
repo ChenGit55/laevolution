@@ -5,9 +5,13 @@ export const PayPal = ({ totalPrice }: { totalPrice: string }) => {
   const requestData = {
     value: totalPrice,
   };
+
   return (
     <PayPalScriptProvider
-      options={{ clientId: process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID! }}
+      options={{
+        clientId: process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID!,
+        enableFunding: "venmo",
+      }}
     >
       <PayPalButtons
         createOrder={async () => {

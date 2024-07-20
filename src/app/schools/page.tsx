@@ -1,15 +1,18 @@
+import "./schools.css";
 import Image from "next/image";
 export default function Schools() {
   return (
     <main>
       <h1>Bring LA Evolution to your School</h1>
       <section className="scholl-section1">
-        <div className="top-page-image">
+        <div className="top-page-image school-img-container">
           <Image
             src={"/img/photos/kids-school.jpg"}
             height={500}
-            width={500}
+            width={900}
+            objectFit="cover"
             alt="private-class"
+            className="school-img"
           />
         </div>
         <article className="article-base">
