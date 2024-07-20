@@ -1,9 +1,9 @@
 import "./plancard.css";
 
 // card for plans with price
-export const PlanCardRoot = ({ title, price, children }: any) => {
+export const PlanCardRoot = ({ title, price, children, onClick }: any) => {
   return (
-    <div className="plan-card">
+    <div className="plan-card" onClick={onClick} data-price={price}>
       <div className="plan-card-title">{title}</div>
       <div className="plan-card-price">
         <span className="plan-card-dollar-sign">$</span>
