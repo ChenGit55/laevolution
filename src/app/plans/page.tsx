@@ -22,7 +22,7 @@ export default function Plans() {
   const value = priceDisplay;
 
   return (
-    <div>
+    <main className="plans-page">
       <h1>Schedule LA Evoltuion coach.</h1>
       <div className="flex justify-center text-black  w-full bg-red-500">
         <input
@@ -50,6 +50,6 @@ export default function Plans() {
       <div className="paypal-container">
         <PayPal totalPrice={value} />
       </div>
-    </div>
+    </main>
   );
 }

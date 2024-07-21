@@ -2,7 +2,7 @@ import "./schools.css";
 import Image from "next/image";
 export default function Schools() {
   return (
-    <main>
+    <main className="scholls-page">
       <h1>Bring LA Evolution to your School</h1>
       <section className="scholl-section1">
         <div className="top-page-image school-img-container">

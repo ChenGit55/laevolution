@@ -16,6 +16,10 @@ body {
   background-color: black;
 }
 
+.global-container {
+  padding-top: 100px;
+}
+
 .icon-logo {
   color: white;
   width: 128px;

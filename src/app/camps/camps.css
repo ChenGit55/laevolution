@@ -1,123 +1,119 @@
 :root {
-    --card-primary-color: rgb(0, 0, 0);
-    --card-description-color: rgb(0,0,0);
-    --card-hover-color: rgb(255,255,255);
+  --card-primary-color: rgb(0, 0, 0);
+  --card-description-color: rgb(0, 0, 0);
+  --card-hover-color: rgb(255, 255, 255);
 }
 
-.camps-page{
-    display: flex;
+.camps-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container {
+  width: 1000px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.base-card {
+  position: relative;
+  margin: auto;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 5px solid var(--card-primary-color);
+  transition: all 0.5s (0.64, 1.57, 0.47, -0.33);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.base-card:hover {
+  border-color: var(--card-hover-color);
+  box-shadow: 0 0px 20px 5px var(--card-hover-color);
+}
+
+.card-img-container {
+  width: 2200px;
+  height: auto;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img {
+  width: fit-content;
+  height: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.base-card:hover .card-img {
+  transform: scale(1.1, 1.1);
+}
+
+.card-description {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  padding: 5px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  transform: translate(100%);
+  font-weight: bolder;
+}
+
+.base-card:hover .card-description {
+  transform: translate(0);
+  background-color: var(--card-description-color);
+}
+
+@media (max-width: 760px) {
+  .base-card {
+    margin: 5px;
+  }
+  .cards-container {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+  }
+  .base-card {
+    margin: 5px;
+  }
 }
 
-.cards-container{
-    width: 1000px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.soccer-card {
+  --card-primary-color: rgb(0, 128, 0);
 }
 
-.base-card{
-    position: relative;
-    margin: auto;
-    width: 200px;
-    height: 300px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: 5px solid var(--card-primary-color);
-    transition: all 0.5s (.64,1.57,.47,-0.33);
-    overflow: hidden;
-    cursor: pointer;
+.soccer-card:hover {
+  --card-hover-color: rgb(109, 255, 109);
+  --card-description-color: rgb(109, 255, 109, 0.7);
 }
 
-.base-card:hover{
-    border-color: var(--card-hover-color); 
-    box-shadow: 0 0px 20px 5px var(--card-hover-color);
+.beach-card {
+  --card-primary-color: rgb(196, 192, 0);
 }
 
-
-.card-img-container{
-    width: 2200px;
-    height: auto;
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
+.beach-card:hover {
+  --card-hover-color: rgb(242, 255, 62);
+  --card-description-color: rgb(242, 255, 62, 0.7);
 }
 
-.card-img{
-    width: fit-content;
-    height: auto;
-    transition: all 0.5s ease-in-out;
+.futsal-card {
+  --card-primary-color: rgb(13, 133, 163);
 }
 
-.base-card:hover .card-img{
-    transform: scale(1.1,1.1);
+.futsal-card:hover {
+  --card-hover-color: rgb(0, 204, 255);
+  --card-description-color: rgb(0, 204, 255, 0.7);
 }
-
-.card-description{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    bottom: 0;
-    padding: 5px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    transition: all 0.5s ease-in-out;
-    transform: translate(100%);
-    font-weight: bolder;
-}
-
-.base-card:hover .card-description{
-    transform: translate(0);
-    background-color: var(--card-description-color);
-}
-
-@media (max-width: 760px){
-    .base-card{
-        margin: 5px;
-    }
-    .cards-container{
-        flex-direction: column;
-        align-items: center;
-    }
-    .base-card{
-        margin: 5px;
-    }
-}
-
-.soccer-card{   
-    --card-primary-color:rgb(0, 128, 0);  
-}
-
-.soccer-card:hover{
-    --card-hover-color: rgb(109, 255, 109);    
-   --card-description-color:rgb(109, 255, 109, 0.7);
-}
-
-.beach-card{
-    --card-primary-color:rgb(196, 192, 0);
-}
-
-.beach-card:hover{       
-    --card-hover-color: rgb(242, 255, 62);
-    --card-description-color: rgb(242, 255, 62, 0.7);
-}
-
-
-.futsal-card{
-    --card-primary-color:rgb(13, 133, 163);
-}
-
-.futsal-card:hover{
-    --card-hover-color: rgb(0, 204, 255);
-    --card-description-color: rgb(0, 204, 255, 0.7);
-}
-
-

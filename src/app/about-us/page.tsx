@@ -1,6 +1,6 @@
 export default function AboutUs() {
   return (
-    <main className="">
+    <main className="about-us-page">
       <h1>About US</h1>
       <section>
         {/* <img className="logo-head mx-auto fade-in" src="#" alt="lion" /> */}

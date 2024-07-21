@@ -4,7 +4,7 @@ import "./private-training.css";
 
 export default function PrivateTraining() {
   return (
-    <main className="">
+    <main className="private-training-page">
       <h1>Private Classes</h1>
       <article className="article-base">
         <h2 className="header-text">
