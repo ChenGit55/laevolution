@@ -17,7 +17,7 @@ body {
 }
 
 .global-container {
-  padding-top: 100px;
+  padding-top: 30px;
 }
 
 .icon-logo {
@@ -61,4 +61,10 @@ h2 {
   color: white;
   border-color: green;
   background-color: green;
+}
+
+@media (min-width: 768px) {
+  .global-container {
+    padding-top: 100px;
+  }
 }
