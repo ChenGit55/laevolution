@@ -5,8 +5,8 @@ import Link from "next/link";
 import Logo1 from "../SvgComponents/Logo1";
 
 export default function Header() {
+  // dropdown menu for screens smaller than 768px
   const [expandNav, setExpandNav] = useState(false);
-
   const toggle = () => {
     setExpandNav(!expandNav);
   };

@@ -39,6 +39,12 @@ export default function Plans() {
           onClick={handleSelectPrice}
         >
           <PlanCard.LineInfo textInfo="info 1" />
+
+          <PlanCard.LineInfo textInfo="Other info 2" />
+
+          <PlanCard.LineInfo textInfo="info 3" />
+
+          <PlanCard.LineInfo textInfo="info 4" />
         </PlanCard.Root>
       </div>
       <div className="paypal-container">
