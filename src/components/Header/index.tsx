@@ -1,19 +1,30 @@
 "use client";
 import "./header.css";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Logo1 from "../SvgComponents/Logo1";
 
 export default function Header() {
   // dropdown menu for screens smaller than 768px
   const [expandNav, setExpandNav] = useState(false);
-  const toggle = () => {
-    setExpandNav(!expandNav);
-  };
+  const navRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOut = (e: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(e.target as Node)) {
+        setExpandNav(false);
+        console.log("test");
+      }
+    };
+    document.addEventListener("mousedown", handleClickOut);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOut);
+    };
+  }, []);
 
   return (
     <header>
-      <nav className="my-nav">
+      <nav className="my-nav" ref={navRef}>
         <div className="responsive-menu">
           {/* "hamburger" menu toggle */}
           <button
@@ -21,8 +32,9 @@ export default function Header() {
             type="button"
             className="md:hidden"
             aria-controls="navbar-solid-bg"
-            aria-expanded={expandNav ? "true" : "false"}
-            onClick={toggle}
+            onClick={() => {
+              setExpandNav(!expandNav);
+            }}
           >
             <span className="sr-only">Open main menu</span>
             <svg
