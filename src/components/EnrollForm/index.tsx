@@ -111,11 +111,12 @@ const EnrollForm = () => {
             onChange={handleChange}
           >
             <option value="--">--</option>
-            <option value="Soccer">Soccer</option>
-            <option value="Beach Soccer">Beach Soccer</option>
-            <option value="Futsal">Futsal</option>
-            <option value="Private Training">Private Training</option>
-            <option value="Evolution Expirience">Evolution Expirience</option>
+            <option value="Soccer">Private Training</option>
+            <option value="Beach Soccer">
+              Grupo session (4 players minimum)
+            </option>
+            <option value="Futsal">Camp (week)</option>
+            <option value="Private Training">Birthday Party </option>
           </select>
         </div>
       </div>
