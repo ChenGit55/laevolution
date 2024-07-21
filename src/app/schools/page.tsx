@@ -10,8 +10,7 @@ export default function Schools() {
             src={"/img/photos/kids-school.jpg"}
             height={500}
             width={900}
-            objectFit="cover"
-            alt="private-class"
+            alt="scholl-kids"
             className="school-img"
           />
         </div>

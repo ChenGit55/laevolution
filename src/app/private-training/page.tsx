@@ -7,7 +7,7 @@ export default function PrivateTraining() {
     <main className="private-training-page">
       <h1>Private Classes</h1>
       <article className="article-base">
-        <h2 className="header-text">
+        <p className="header-text">
           Our private classes are for all ages, including adults. Private
           coaching will improve the player’s technical skills and
           decision-making on the field. Our coaches will help boost the player’s
@@ -15,7 +15,7 @@ export default function PrivateTraining() {
           weaknesses, sharpening strengths, helping them to become complete
           players, motivated throughout the whole process of becoming a soccer
           player.
-        </h2>
+        </p>
       </article>
       <div className="feature-section">
         <div className="feature-img">

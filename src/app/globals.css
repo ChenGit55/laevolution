@@ -49,6 +49,7 @@ h2 {
 
 .article-base p {
   text-align: justify;
+  font-size: 1.3rem;
 }
 
 .my-btn {
@@ -66,5 +67,9 @@ h2 {
 @media (min-width: 768px) {
   .global-container {
     padding-top: 100px;
+  }
+  .article-base p {
+    text-align: justify;
+    font-size: 2rem;
   }
 }
