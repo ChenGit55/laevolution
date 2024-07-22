@@ -13,7 +13,6 @@ export default function Header() {
     const handleClickOut = (e: MouseEvent) => {
       if (navRef.current && !navRef.current.contains(e.target as Node)) {
         setExpandNav(false);
-        console.log("test");
       }
     };
     document.addEventListener("mousedown", handleClickOut);

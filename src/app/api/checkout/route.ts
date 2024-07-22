@@ -12,7 +12,6 @@ export async function POST(request: NextRequest) {
   const requestOrder = new paypal.orders.OrdersCreateRequest();
   requestOrder.requestBody({
     intent: "CAPTURE",
-
     purchase_units: [
       {
         amount: {
