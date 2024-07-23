@@ -12,7 +12,7 @@ export default function Camps() {
         <div className="camps-img-container">
           <Image
             className="beach-img"
-            src="/img/photos/beach-ball.jpg"
+            src="/img/photos/beach-ball.webp"
             height={500}
             width={500}
             alt=""

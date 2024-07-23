@@ -17,7 +17,7 @@
 }
 
 .paralax00 {
-  background-image: url("/img/photos/la-team.jpg");
+  background-image: url("/img/photos/la-team.webp");
 }
 
 .cover-page {
@@ -45,14 +45,14 @@
 }
 
 .paralax01 {
-  background-image: url("/img/photos/kids.jpg");
+  background-image: url("/img/photos/kids.webp");
 }
 .paralax01 h1 {
   visibility: hidden;
 }
 
 .paralax02 {
-  background-image: url("/img/photos/kids.jpg");
+  background-image: url("/img/photos/kids.webp");
 }
 
 .carousel-section {
@@ -66,7 +66,7 @@
 }
 
 .carousel-section::before {
-  /* background-image: url("/img/photos/team.jpg"); */
+  /* background-image: url("/img/photos/team.webp"); */
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.2;

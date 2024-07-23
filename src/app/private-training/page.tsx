@@ -20,7 +20,7 @@ export default function PrivateTraining() {
       <div className="feature-section">
         <div className="feature-img">
           <Image
-            src={"/img/photos/young-goalkepper.jpg"}
+            src={"/img/photos/young-goalkepper.webp"}
             height={500}
             width={500}
             alt="private-class"
@@ -72,7 +72,7 @@ export default function PrivateTraining() {
                 height={300}
                 width={300}
                 alt="Mother & son"
-                src={"/img/photos/mom-son.jpg"}
+                src={"/img/photos/mom-son.webp"}
               />
             </div>
             <div>

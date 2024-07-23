@@ -7,7 +7,7 @@ export default function Schools() {
       <section className="scholl-section1">
         <div className="top-page-image school-img-container">
           <Image
-            src={"/img/photos/kids-school.jpg"}
+            src={"/img/photos/kids-school.webp"}
             height={500}
             width={900}
             alt="scholl-kids"
