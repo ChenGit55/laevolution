@@ -11,13 +11,13 @@ export default function Home() {
           <div className="logo-container">
             <Logo1 className="cover-logo" width="1000px" />
           </div>
-          <h2>BRAZILIAN SOCCER TEACHING METHODOLOGY</h2>
         </section>
       </div>
 
       {/* carosel section */}
       <div className="carousel-section">
-        <h2>Traing with LA Evolution!</h2>
+        <h2>Excellence in sports!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         <Carousel />
       </div>
 

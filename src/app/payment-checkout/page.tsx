@@ -1,17 +1,20 @@
 "use client";
-import Modal from "@/components/Modal";
+
 import "./checkout.css";
 import { PayPal } from "@/components/PyaPal";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function PaymentCheckout() {
   const [price, setPrice] = useState("10");
 
   // get the price
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    console.log(e.target.value);
     const selectedPrice = e.target.value;
     setPrice(selectedPrice);
   };
+
+  console.log(price);
 
   // useEffect(() => {}, [price]);
 

@@ -2,7 +2,7 @@
 import "./header.css";
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import Logo1 from "../SvgComponents/Logo1";
+import Image from "next/image";
 
 export default function Header() {
   // dropdown menu for screens smaller than 768px
@@ -89,7 +89,12 @@ export default function Header() {
         {/* Logo */}
         <div className="nav-brand">
           <Link href="/" className="navLink">
-            <Logo1 className="nav-logo" />
+            <Image
+              src={"/img/logos/Lion_Head_Original.svg"}
+              height={50}
+              width={50}
+              alt="logo"
+            />
           </Link>
         </div>
       </nav>
