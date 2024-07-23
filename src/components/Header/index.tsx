@@ -91,8 +91,8 @@ export default function Header() {
           <Link href="/" className="navLink">
             <Image
               src={"/img/logos/Lion_Head_Original.svg"}
-              height={50}
-              width={50}
+              height={70}
+              width={70}
               alt="logo"
             />
           </Link>
