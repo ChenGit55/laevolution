@@ -3,14 +3,13 @@
   width: 200px;
   text-align: center;
   align-self: center;
-  padding-top: 3px;
   color: var(--secondary);
 }
 
-.enroll-form span {
-  color: white;
-  text-align: start;
+.enroll-form {
+  padding: 20px;
 }
+
 .enroll-form .form-field {
   margin-top: 10px;
 }
@@ -62,4 +61,10 @@
 
 .collapsed {
   max-height: 0;
+}
+
+@media (min-width: 768px) {
+  .enroll-form {
+    width: 500px;
+  }
 }

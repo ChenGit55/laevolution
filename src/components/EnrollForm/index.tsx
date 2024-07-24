@@ -100,7 +100,7 @@ const EnrollForm = () => {
     setIsChecked(!isChecked);
   };
   return (
-    <form className="enroll-form max-w-md mx-auto p-5" onSubmit={sendEmail}>
+    <form className="enroll-form " onSubmit={sendEmail}>
       <div className="program-select">
         <div className="form-field">
           <select
@@ -147,7 +147,9 @@ const EnrollForm = () => {
                 onChange={handleChange}
                 required
               />
-              <label htmlFor="inline-radio">Boy</label>
+              <label htmlFor="inline-radio" className="form-label">
+                Boy
+              </label>
             </div>
             <div className="flex items-center me-4">
               <input
@@ -159,7 +161,9 @@ const EnrollForm = () => {
                 checked={formData.gender === "girl"}
                 required
               />
-              <label htmlFor="inline-radio">Girl</label>
+              <label htmlFor="inline-radio" className="form-label">
+                Girl
+              </label>
             </div>
           </div>
         </div>
