@@ -190,30 +190,26 @@ const EnrollForm = () => {
       <div className="parent-information">
         <h5>Parent information</h5>
         <div className="form-field">
-          <label className="form-label">
-            Name
-            <input
-              type="text"
-              name="p_name"
-              value={formData.p_name}
-              onChange={handleChange}
-              className="my-input-base"
-              placeholder="Full Name"
-            />
-          </label>
+          <label className="form-label">Name</label>
+          <input
+            type="text"
+            name="p_name"
+            value={formData.p_name}
+            onChange={handleChange}
+            className="my-input-base"
+            placeholder="Full Name"
+          />
         </div>
         <div className="form-field">
-          <label className="form-label">
-            Address
-            <input
-              type="text"
-              name="address"
-              value={formData.address}
-              onChange={handleChange}
-              className="my-input-base"
-              placeholder="Address"
-            />
-          </label>
+          <label className="form-label">Address</label>
+          <input
+            type="text"
+            name="address"
+            value={formData.address}
+            onChange={handleChange}
+            className="my-input-base"
+            placeholder="Address"
+          />
         </div>
         <div className="flex justify-between">
           <div className="form-field">
@@ -292,24 +288,21 @@ const EnrollForm = () => {
           </div>
         </div>
         <div className="form-field">
-          <label className="form-label">
-            Zip
-            <input
-              type="text"
-              name="zip"
-              value={formData.zip}
-              onChange={handleChange}
-              className="my-input-base"
-              placeholder="Zip"
-            />
-          </label>
+          <label className="form-label">Zip</label>
+          <input
+            type="text"
+            name="zip"
+            value={formData.zip}
+            onChange={handleChange}
+            className="my-input-base"
+            placeholder="Zip"
+          />
         </div>
         <div className="form-field">
           <label className="form-label">Email</label>
           <input
             value={formData.email}
             onChange={handleChange}
-            // onChange={handleChange}
             type="email"
             name="email"
             className="my-input-base"
