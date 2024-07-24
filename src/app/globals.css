@@ -52,10 +52,27 @@ h2 {
   font-size: 1.3rem;
 }
 
+.form-label {
+  font-weight: bold;
+  color: white;
+}
+
+.my-input-base {
+  border-radius: 6px;
+  width: 100%;
+  color: black;
+  padding: 10px;
+}
+
+.data-input {
+  width: fit-content;
+}
+
 .my-btn {
   color: black;
   border-color: white;
   background-color: white;
+  width: fit-content;
 }
 
 .my-btn:hover {

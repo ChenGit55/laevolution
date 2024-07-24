@@ -104,7 +104,7 @@ const EnrollForm = () => {
       <div className="program-select">
         <div className="form-field">
           <select
-            className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+            className="my-input-base"
             name="program"
             id="program"
             value={formData.program}
@@ -123,27 +123,19 @@ const EnrollForm = () => {
       <div className="children-information">
         <h5>Child information</h5>
         <div className="form-field">
-          <label className="block">
-            <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-              Name
-            </span>
-          </label>
+          <label className="form-label">Name</label>
           <input
             type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+            className="my-input-base"
             placeholder="Full Name"
             required
           />
         </div>
         <div className="form-field">
-          <label className="block">
-            <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-              Gender
-            </span>
-          </label>
+          <label className="form-label">Gender</label>
           <div className="form-field">
             <div className="flex items-center me-4">
               <input
@@ -153,15 +145,9 @@ const EnrollForm = () => {
                 value="boy"
                 checked={formData.gender === "boy"}
                 onChange={handleChange}
-                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 required
               />
-              <label
-                htmlFor="inline-radio"
-                className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Boy
-              </label>
+              <label htmlFor="inline-radio">Boy</label>
             </div>
             <div className="flex items-center me-4">
               <input
@@ -171,24 +157,14 @@ const EnrollForm = () => {
                 value="girl"
                 onChange={handleChange}
                 checked={formData.gender === "girl"}
-                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 required
               />
-              <label
-                htmlFor="inline-2-radio"
-                className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Girl
-              </label>
+              <label htmlFor="inline-radio">Girl</label>
             </div>
           </div>
         </div>
         <div className="form-field">
-          <label className="block">
-            <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-              Date of Birth
-            </span>
-          </label>
+          <label className="form-label"> Date of Birth</label>
           <div className="relative max-w-sm">
             <input
               id="default-datepicker"
@@ -196,21 +172,17 @@ const EnrollForm = () => {
               name="dob"
               value={formData.dob}
               onChange={handleChange}
-              className="mt-1 px-5 py-2 text-gray-500 border shadow-sm border-slate-300  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block rounded-md sm:text-sm focus:ring-1"
+              className="my-input-base data-input"
             />
           </div>
         </div>
         <div className="form-field">
-          <label className="block">
-            <span className="block text-sm font-medium text-slate-700">
-              Additional Information
-            </span>
-          </label>
+          <label className="form-label">Additional Information</label>
           <textarea
             name="add_inf"
             value={formData.add_inf}
             onChange={handleChange}
-            className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+            className="my-input-base"
             placeholder="Relevant information here..."
           />
         </div>
@@ -218,61 +190,49 @@ const EnrollForm = () => {
       <div className="parent-information">
         <h5>Parent information</h5>
         <div className="form-field">
-          <label className="block">
-            <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-              Name
-            </span>
+          <label className="form-label">
+            Name
             <input
               type="text"
               name="p_name"
               value={formData.p_name}
               onChange={handleChange}
-              className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+              className="my-input-base"
               placeholder="Full Name"
             />
           </label>
         </div>
         <div className="form-field">
-          <label className="block">
-            <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-              Address
-            </span>
+          <label className="form-label">
+            Address
             <input
               type="text"
               name="address"
               value={formData.address}
               onChange={handleChange}
-              className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+              className="my-input-base"
               placeholder="Address"
             />
           </label>
         </div>
         <div className="flex justify-between">
           <div className="form-field">
-            <label className="block">
-              <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-                City
-              </span>
-            </label>
+            <label className="form-label">City</label>
             <input
               type="text"
               name="city"
               value={formData.city}
               onChange={handleChange}
-              className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+              className="my-input-base"
               placeholder="City"
             />
           </div>
           <div className="form-field">
-            <label className="block">
-              <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-                State
-              </span>
-            </label>
+            <label className="form-label">State</label>
             <select
               value={formData.state}
               onChange={handleChange}
-              className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+              className="my-input-base"
               name="state"
               id="states"
             >
@@ -332,98 +292,76 @@ const EnrollForm = () => {
           </div>
         </div>
         <div className="form-field">
-          <label className="block">
-            <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-              Zip
-            </span>
+          <label className="form-label">
+            Zip
             <input
               type="text"
               name="zip"
               value={formData.zip}
               onChange={handleChange}
-              className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+              className="my-input-base"
               placeholder="Zip"
             />
           </label>
         </div>
         <div className="form-field">
-          <label className="block">
-            <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-              Email
-            </span>
-          </label>
+          <label className="form-label">Email</label>
           <input
             value={formData.email}
             onChange={handleChange}
             // onChange={handleChange}
             type="email"
             name="email"
-            className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+            className="my-input-base"
             placeholder="you@example.com"
           />
         </div>
         <div className="form-field">
-          <label className="block">
-            <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-              Phone
-            </span>
-            <input
-              type="text"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
-              placeholder="123-456-789"
-            />
-          </label>
+          <label className="form-label">Phone</label>
+          <input
+            type="text"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            className="my-input-base"
+            placeholder="123-456-789"
+          />
         </div>
       </div>
       <div className="emergency-contact">
         <h5>Emergency Contact</h5>
         <div className="form-field">
-          <label className="block">
-            <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-              Name
-            </span>
-            <input
-              type="text"
-              name="emergency_name"
-              value={formData.emergency_name}
-              onChange={handleChange}
-              className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
-              placeholder="Full Name"
-            />
-          </label>
+          <label className="form-label">Name</label>
+          <input
+            type="text"
+            name="emergency_name"
+            value={formData.emergency_name}
+            onChange={handleChange}
+            className="my-input-base"
+            placeholder="Full Name"
+          />
         </div>
         <div className="form-field">
-          <label className="block">
-            <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-              Email
-            </span>
-          </label>
+          <label className="form-label">Email</label>
           <input
             type="email"
             name="emergency_email"
             value={formData.emergency_email}
             onChange={handleChange}
-            className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+            className="my-input-base"
             placeholder="you@example.com"
           />
         </div>
         <div className="form-field">
-          <label className="block">
-            <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
-              Phone
-            </span>
-            <input
-              type="text"
-              name="emergency_phone"
-              value={formData.emergency_phone}
-              onChange={handleChange}
-              className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
-              placeholder="123-456-789"
-            />
-          </label>
+          <label className="form-label">Phone</label>
+          <input
+            type="text"
+            name="emergency_phone"
+            value={formData.emergency_phone}
+            onChange={handleChange}
+            className="my-input-base"
+            placeholder="123-456-789"
+          />
         </div>
       </div>
       <div className="form-field">
@@ -508,7 +446,7 @@ const EnrollForm = () => {
           <input
             id="terms"
             type="checkbox"
-            className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+            className="my-input-base"
             checked={isChecked}
             onChange={handleCheckboxChange}
           />
@@ -531,7 +469,7 @@ const EnrollForm = () => {
       <div className="form-button">
         <button
           type="submit"
-          className="my-btn py-2 px-5 text-sm font-medium text-center rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary-300"
+          className="my-input-base my-btn"
           disabled={!isChecked}
         >
           Enroll

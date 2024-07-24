@@ -1,4 +1,5 @@
 "use client";
+import EnrollForm from "@/components/EnrollForm";
 import "./camps.css";
 import Image from "next/image";
 
@@ -35,6 +36,7 @@ export default function Camps() {
           </p>
         </article>
       </section>
+      <EnrollForm />
     </main>
   );
 }

@@ -58,10 +58,7 @@ const ContactUs = () => {
         </p>
         <form className="space-y-8" onSubmit={sendEmail}>
           <div>
-            <label
-              htmlFor="email"
-              className="block mb-2 text-sm font-medium text-white"
-            >
+            <label htmlFor="email" className="form-label">
               Your email
             </label>
             <input
@@ -70,16 +67,13 @@ const ContactUs = () => {
               value={formData.email}
               onChange={handleChange}
               id="email"
-              className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
-              placeholder="name@lasevolution.com"
+              className="my-input-base"
+              placeholder="email@lasevolution.com"
               required
             />
           </div>
           <div>
-            <label
-              htmlFor="subject"
-              className="block mb-2 text-sm font-medium text-white"
-            >
+            <label htmlFor="subject" className="form-label">
               Subject
             </label>
             <input
@@ -88,16 +82,13 @@ const ContactUs = () => {
               name="subject"
               value={formData.subject}
               onChange={handleChange}
-              className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
+              className="my-input-base"
               placeholder="Let us know how we can help you"
               required
             />
           </div>
-          <div className="sm:col-span-2">
-            <label
-              htmlFor="message"
-              className="block mb-2 text-sm font-medium text-white"
-            >
+          <div>
+            <label htmlFor="message" className="form-label">
               Your message
             </label>
             <textarea
@@ -105,14 +96,12 @@ const ContactUs = () => {
               name="msg"
               value={formData.msg}
               onChange={handleChange}
-              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+              className="my-input-base"
               placeholder="Leave a comment..."
             />
           </div>
-          <button
-            type="submit"
-            className="my-btn py-3 px-5 text-sm font-medium text-center rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary-300"
-          >
+
+          <button type="submit" className="my-input-base my-btn">
             Send message
           </button>
         </form>
