@@ -58,21 +58,21 @@ function Carousel() {
       </Head>
       <Slider {...settings} className="carousel-component">
         <Image
-          src={"/img/photos/photo0001.png"}
+          src={"/img/photos/tackle.webp"}
           alt={"slide1"}
           width="900"
           height="900"
         />
 
         <Image
-          src={"/img/photos/photo0002.png"}
+          src={"/img/photos/kids-playing.webp"}
           alt={"slide2"}
           width="900"
           height="900"
         />
 
         <Image
-          src={"/img/photos/photo0003.png"}
+          src={"/img/photos/two-boys-playing.webp"}
           alt={"slide3"}
           width="900"
           height="900"
