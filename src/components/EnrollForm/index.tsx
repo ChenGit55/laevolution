@@ -176,7 +176,7 @@ const EnrollForm = () => {
               name="dob"
               value={formData.dob}
               onChange={handleChange}
-              className="my-input-base data-input"
+              className="my-input-base date-input"
             />
           </div>
         </div>
