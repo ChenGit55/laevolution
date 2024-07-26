@@ -49,7 +49,6 @@ h2 {
 
 .article-base p {
   text-align: justify;
-  font-size: 1.3rem;
 }
 
 .form-label {
@@ -86,7 +85,7 @@ h2 {
     padding-top: 100px;
   }
   .article-base p {
-    text-align: justify;
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1rem;
   }
 }

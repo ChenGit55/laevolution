@@ -136,49 +136,45 @@ const EnrollForm = () => {
         </div>
         <div className="form-field">
           <label className="form-label">Gender</label>
-          <div className="form-field">
-            <div className="flex items-center me-4">
-              <input
-                type="radio"
-                id="inline-radio"
-                name="gender"
-                value="boy"
-                checked={formData.gender === "boy"}
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="inline-radio" className="form-label">
-                Boy
-              </label>
-            </div>
-            <div className="flex items-center me-4">
-              <input
-                type="radio"
-                id="inline-2-radio"
-                name="gender"
-                value="girl"
-                onChange={handleChange}
-                checked={formData.gender === "girl"}
-                required
-              />
-              <label htmlFor="inline-radio" className="form-label">
-                Girl
-              </label>
-            </div>
+          <div className="radio-form-field">
+            <input
+              type="radio"
+              id="inline-radio"
+              name="gender"
+              value="boy"
+              checked={formData.gender === "boy"}
+              onChange={handleChange}
+              required
+            />
+            <label htmlFor="inline-radio" className="form-label">
+              Boy
+            </label>
+          </div>
+          <div className="radio-form-field">
+            <input
+              type="radio"
+              id="inline-2-radio"
+              name="gender"
+              value="girl"
+              onChange={handleChange}
+              checked={formData.gender === "girl"}
+              required
+            />
+            <label htmlFor="inline-radio" className="form-label">
+              Girl
+            </label>
           </div>
         </div>
         <div className="form-field">
           <label className="form-label"> Date of Birth</label>
-          <div className="relative max-w-sm">
-            <input
-              id="default-datepicker"
-              type="date"
-              name="dob"
-              value={formData.dob}
-              onChange={handleChange}
-              className="my-input-base date-input"
-            />
-          </div>
+          <input
+            id="default-datepicker"
+            type="date"
+            name="dob"
+            value={formData.dob}
+            onChange={handleChange}
+            className="my-input-base date-input"
+          />
         </div>
         <div className="form-field">
           <label className="form-label">Additional Information</label>
@@ -215,7 +211,7 @@ const EnrollForm = () => {
             placeholder="Address"
           />
         </div>
-        <div className="flex justify-between">
+        <div className="cit-state-row">
           <div className="form-field">
             <label className="form-label">City</label>
             <input
@@ -438,26 +434,16 @@ const EnrollForm = () => {
           </p>
         </div>
       </div>
-      <div className="form-field flex items-start mb-5">
-        <div className="flex items-center h-5">
-          <input
-            id="terms"
-            type="checkbox"
-            className="my-input-base"
-            checked={isChecked}
-            onChange={handleCheckboxChange}
-          />
-        </div>
-        <label
-          htmlFor="terms"
-          className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-        >
+      <div className="checkbox-form-field">
+        <input
+          id="terms"
+          type="checkbox"
+          checked={isChecked}
+          onChange={handleCheckboxChange}
+        />
+        <label htmlFor="terms">
           I agree with the{" "}
-          <a
-            href="#"
-            className="text-blue-600 hover:underline dark:text-blue-500"
-            onClick={toggleCollapse}
-          >
+          <a href="#" onClick={toggleCollapse} className="my-link">
             terms and conditions.(
             {collapsed ? "show" : "hide"})
           </a>{" "}

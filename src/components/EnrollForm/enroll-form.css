@@ -12,6 +12,23 @@
 
 .enroll-form .form-field {
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-form-field{
+  display: flex;
+  gap: 10px;
+}
+
+.my-link{
+  color: #02a0fc;
+  text-decoration: underline;
+}
+
+.cit-state-row{
+  display: flex;
+  gap: 30px;
 }
 
 .children-information,
