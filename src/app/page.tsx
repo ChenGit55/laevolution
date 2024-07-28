@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="main-home">
       {/* section */}
-      <div className="paralax00 paralax-bg">
+      <div className="paralax-bg">
         <section className="cover-page home-section">
           <div className="logo-container">
             <Logo1 className="cover-logo" width="1000px" />
@@ -17,12 +17,12 @@ export default function Home() {
       {/* carosel section */}
       <div className="carousel-section">
         <h2>Excellence in sports!</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
         <Carousel />
       </div>
 
       {/* section */}
-      <div className="paralax02 paralax-bg">
+      <div className="paralax-bg">
         <h1>Shaping future champions!</h1>
       </div>
     </main>
