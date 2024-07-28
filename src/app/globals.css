@@ -7,6 +7,11 @@
   --secondary: #d49529;
 }
 
+.icon-logo {
+  color: white;
+  width: 128px;
+}
+
 body {
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -18,11 +23,6 @@ body {
 
 .global-container {
   padding-top: 30px;
-}
-
-.icon-logo {
-  color: white;
-  width: 128px;
 }
 
 h1 {
