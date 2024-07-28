@@ -101,7 +101,7 @@ const EnrollForm = () => {
   };
   return (
     <form className="enroll-form " onSubmit={sendEmail}>
-      <div className="program-select">
+      {/* <div className="program-select">
         <div className="form-field">
           <select
             className="my-input-base"
@@ -119,7 +119,7 @@ const EnrollForm = () => {
             <option value="Private Training">Birthday Party </option>
           </select>
         </div>
-      </div>
+      </div> */}
       <div className="children-information">
         <h5>Child information</h5>
         <div className="form-field">
